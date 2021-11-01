@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Cau1/cau1.css">
+</head>
+<body>
+    <img src="/Cau1/Cau1/Jackson.gif">
+    <h2>Registation Form</h2>
+    <p>Register your Jackson Electronics product here</p>
+    <form>
+        <div class="form-row">
+            <label class="form-left" for="firstname">First Name:</label>
+            <div class="form-right" >
+                <input type="text" id="firstname">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname">
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="form-left" for="add1">Address #1:</label>
+            <input class="form-right" type="text" id="add1">
+        </div>
+        <div class="form-row">
+            <label class="form-left" for="add2">Address #2:</label>
+            <input class="form-right" type="text" id="add2">
+        </div>
+        <div class="form-row">
+            <label class="form-left" for="city">City:</label>
+            <div class="form-right" >
+                <input type="text" id="city">
+                <label for="state">State:</label>
+                <input type="text" id="state">
+                <label for="zip">Zip:</label>
+                <input type="text" id="zip">
+            </div>
+        </div >
+        <div class="form-row">
+            <label class="form-left" for="country">Country:</label>
+            <input class="form-right" type="text" id="country">
+        </div>
+        <hr>
+        <div class="form-row">
+            <label class="form-left" >Product:</label>
+            <select class="form-right" >
+                <option value="scanmaster">Scan Master</opt>
+                <option value="scanmaster2">Scan Master 2</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label class="form-left" for="date">Date Purchased:</label>
+            <input class="form-right" id="date" type="text">
+        </div>
+        <div class="form-row">
+            <label class="form-left" for="seri">Serial #:</label>
+            <input class="form-right" id="seri" type="text">
+        </div>
+        <div class="form-row">
+            <label class="form-left" >Used for:</label>
+            <div class="form-right" >
+                <input type="radio" name="usedfor" value="home" id="home">
+                <label for="home">Home</label>
+                <input type="radio" name="usedfor" value="business" id="business">
+                <label for="business">Business</label>
+                <input type="radio" name="usedfor" value="goverment" id="goverment">
+                <label for="goverment">Goverment</label>
+                <input type="radio" name="usedfor" value="edu" id="edu">
+                <label for="edu">Educational Institution</label>
+                <input type="radio" name="usedfor" value="other" id="other">
+                <label for="other">Other</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="form-left" >System (check all that apply):</label>
+            <div class="form-right" >
+                <input type="checkbox" name="system" value="windows" id="windows">
+                <label for="windows">Windows</label>
+                <input type="checkbox" name="system" value="macin" id="macin">
+                <label for="macin">Macintosh</label>
+                <input type="checkbox" name="system" value="unix" id="unix">
+                <label for="unix">UNIX</label>
+                <input type="checkbox" name="system" value="other" id="other">
+                <label for="other">Other</label>
+            </div>
+        </div>
+        <hr>
+        <div class="form-row">
+            <label class="form-left" >Comments?:</label>
+            <textarea class="form-right" ></textarea>
+        </div>
+        <div class="form-row">
+            <button type="button" name="btn-regis">Click to register</button>
+            <button type="button" name="btn-cancel">Click to cancel</button>
+        </div>
+    </form>
+</body>
+</html>

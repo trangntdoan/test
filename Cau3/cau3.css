@@ -1,0 +1,22 @@
+html{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-row{
+    display: flex;
+    margin: 10px auto;
+}
+table,th,td{
+    border: 1px solid black;
+}
+tr>td:nth-child(2)
+{
+    padding-left: 40px;
+    padding-right: 40px;
+}

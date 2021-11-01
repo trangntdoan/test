@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            color: red;
+        }
+        .radio{
+            display: grid;
+            grid-template-columns: 3;
+        }
+        .radio-column{
+            grid-column-start: 2;
+        }
+        .checkbox{
+            display: grid;
+            grid-template-rows: 2;
+        }
+        .checkbox-row{
+            grid-row-start: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Online Classified Search Form</h1>
+    <hr>
+    <form>
+        <h4>1) Search for a classified in the following sections: </h4>
+        <div class="radio">
+            <div>
+                <input type="radio" name="class" value="employ"  id="employ">
+                <label  for="employ">Employment</label>
+            </div>
+            <div class="radio-column">
+                <input type="radio" name="class" value="preson"  id="person">
+                <label  for="person">Personal</label>
+            </div>
+            <div>
+                <input type="radio" name="class" value="sale"  id="sale">
+                <label  for="sale">For sale</label>
+            </div>
+            <div class="radio-column">
+                <input type="radio" name="class" value="mis"  id="mis">
+                <label  for="mis">Miscellanecus</label>
+            </div>
+            <div>
+                <input type="radio" name="class" value="house"  id="house">
+                <label  for="house">Housing</label>
+            </div>
+            <div class="radio-column">
+                <input type="radio" name="class" value="all"  id="all">
+                <label  for="all">All of the above</label>
+            </div>
+            
+        </div>
+        <h4>2) Search the following publications:</h4>
+        <div  class="checkbox">
+            <div><input type="checkbox" name="publication" value="midw"  id="midw">
+                <label  for="midw">Midwest times</label></div>
+            <div><input type="checkbox" name="publication" value="MNews"  id="MNews">
+                <label  for="MNews">Modern News</label></div>
+            <div><input type="checkbox" name="publication" value="EmToday"  id="EmToday">
+                    <label  for="EmToday">Employment Today</label></div>
+            <div class="checkbox-row"><input type="checkbox" name="publication" value="GLC"  id="GLC">
+                <label  for="GLC">Great Lakes Classified</label></div>
+            <div class="checkbox-row"><input type="checkbox" name="publication" value="Mdaily"  id="Mdaily">
+                <label  for="Mdaily">Middleton Daily</label></div>
+            <div class="checkbox-row"><input type="checkbox" name="publication" value="CTN"  id="CTN">
+                <label  for="CTN">Cashtown Daily News</label></div>
+            
+        </div>
+        <div style="display: flex; margin-top: 20px">
+            <h4 style="margin: 0;">3) From to</h4> &nbsp; &nbsp;
+            <input type="date" >
+            &nbsp; &nbsp; <span>to</span> &nbsp; &nbsp;
+            <input type="date" > <span>.</span>
+        </div>
+        <h4>4) Enter a few keywords to describe the classified</h4>
+        <input style="width: 100%" type="text">
+        <h4>5) Click one of the opions below:</h4>
+        <div>
+            <img src="/Cau2/Image/Search.gif">
+            <img src="/Cau2/Image/Help.gif">
+            <img src="/Cau2/Image/Cancel.gif">
+        </div>
+    </form>
+    
+</body>
+</html>
